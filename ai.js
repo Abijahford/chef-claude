@@ -1,5 +1,5 @@
 export async function getRecipeFromChefClaude(ingredientsArr) {
-  const response = await fetch("/api/chef", {
+  const response = await fetch("./src/api/anthropic.js", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ ingredients: ingredientsArr }),
