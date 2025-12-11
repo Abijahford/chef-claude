@@ -4,12 +4,7 @@ import IngredientsList from "./IngedientsList";
 import { getRecipeFromChefClaude } from "../anthropic";
 
 export default function Main() {
-  const [ingredients, setIngredients] = React.useState([
-    "eggs",
-    "cheese",
-    "bacon",
-    "spices",
-  ]);
+  const [ingredients, setIngredients] = React.useState([]);
   const [recipe, setRecipe] = React.useState("");
 
   function addIngedient(formData) {
