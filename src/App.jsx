@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       {!resume && <Instructions getResume={getResume} />}
-      <Header />
+      <Header getResume={getResume} />
       <Main />
     </>
   );

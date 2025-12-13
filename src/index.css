@@ -52,6 +52,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+header button {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header button img {
+  height: 32px;
+  width: 32px;
 }
 .logo-container {
   width: 100%;
